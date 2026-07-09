@@ -33,7 +33,7 @@ resource "aws_security_group" "app_sg" {
 resource "aws_instance" "app_server" {
   ami           = "ami-01a00762f46d584a1"
   instance_type = var.instance_type
-
+  key_name = "aws-key-pair"
   vpc_security_group_ids = [
     aws_security_group.app_sg.id
   ]

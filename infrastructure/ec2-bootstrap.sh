@@ -13,6 +13,8 @@ usermod -aG docker ubuntu
 systemctl enable nginx
 systemctl start nginx
 
+sleep 10
+
 docker pull alokkumar01/production-cicd-pipeline:v1
 
 docker run -d \
