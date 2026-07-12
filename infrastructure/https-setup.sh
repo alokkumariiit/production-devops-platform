@@ -7,7 +7,7 @@ echo "Starting HTTPS and DuckDNS setup..."
 echo "========================================"
 
 DOMAIN="production-cicd.duckdns.org"
-DUCKDNS_SUBDOMAIN="productioncicd"
+DUCKDNS_SUBDOMAIN="production-cicd"
 DUCKDNS_TOKEN="${DUCKDNS_TOKEN}"
 CERTBOT_EMAIL="${CERTBOT_EMAIL}"
 
