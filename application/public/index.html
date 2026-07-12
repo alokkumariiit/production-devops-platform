@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Production DevOps Platform | Alok Kumar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #ffffff;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(0, 140, 255, 0.18), transparent 30%),
+                radial-gradient(circle at 85% 80%, rgba(0, 255, 170, 0.10), transparent 30%),
+                #050b14;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-bottom: 22px;
+            border: 1px solid rgba(0, 255, 170, 0.4);
+            border-radius: 30px;
+            color: #00ffaa;
+            background: rgba(0, 255, 170, 0.08);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 18px;
+            background: linear-gradient(90deg, #ffffff, #56b9ff, #00ffaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #9fb0c5;
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            color: #d7e3f1;
+            font-family: Consolas, monospace;
+            font-size: 16px;
+        }
+
+        .pipeline span {
+            padding: 9px 13px;
+            border-radius: 7px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .arrow {
+            color: #00ffaa;
+        }
+
+        .description {
+            margin: 45px auto;
+            max-width: 750px;
+            text-align: center;
+            color: #9fb0c5;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            padding: 28px;
+            border-radius: 14px;
+            background: rgba(12, 24, 40, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .card h2 {
+            margin-bottom: 22px;
+            color: #ffffff;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 16px 0;
+            color: #c8d5e3;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #00ffaa;
+            box-shadow: 0 0 12px #00ffaa;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tech {
+            padding: 10px 15px;
+            border-radius: 7px;
+            background: rgba(0, 140, 255, 0.10);
+            border: 1px solid rgba(86, 185, 255, 0.20);
+            color: #8fd0ff;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .tech:hover {
+            transform: translateY(-3px);
+            color: #00ffaa;
+            border-color: rgba(0, 255, 170, 0.4);
+        }
+
+        footer {
+            margin-top: 45px;
+            text-align: center;
+            color: #65788f;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: #00ffaa;
+        }
+
+        @media (max-width: 750px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .pipeline {
+                font-size: 13px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <div class="badge">
+                PRODUCTION ENVIRONMENT
+            </div>
+
+            <h1>
+                Production DevOps Platform
+            </h1>
+
+            <p class="subtitle">
+                Automated CI/CD Pipeline on AWS
+            </p>
+
+            <div class="pipeline">
+                <span>Code</span>
+                <div class="arrow">→</div>
+
+                <span>GitHub Actions</span>
+                <div class="arrow">→</div>
+
+                <span>Docker Hub</span>
+                <div class="arrow">→</div>
+
+                <span>AWS EC2</span>
+                <div class="arrow">→</div>
+
+                <span>Nginx</span>
+                <div class="arrow">→</div>
+
+                <span>HTTPS</span>
+            </div>
+
+        </section>
+
+        <section class="description">
+            Infrastructure provisioned with Terraform.
+            Deployments automated with GitHub Actions.
+            Infrastructure monitored with Prometheus and Grafana.
+        </section>
+
+        <section class="grid">
+
+            <div class="card">
+
+                <h2>SYSTEM STATUS</h2>
+
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    Production Deployment Active
+                </div>
+
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    HTTPS Enabled
+                </div>
+
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    Infrastructure Monitoring Active
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <h2>TECHNOLOGY STACK</h2>
+
+                <div class="tech-stack">
+                    <div class="tech">AWS</div>
+                    <div class="tech">Terraform</div>
+                    <div class="tech">Docker</div>
+                    <div class="tech">GitHub Actions</div>
+                    <div class="tech">Nginx</div>
+                    <div class="tech">Prometheus</div>
+                    <div class="tech">Grafana</div>
+                    <div class="tech">Node.js</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            Built by <strong>Alok Kumar</strong>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+
