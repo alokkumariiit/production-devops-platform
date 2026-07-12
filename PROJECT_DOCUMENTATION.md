@@ -610,7 +610,7 @@ Nginx also provides TLS termination for HTTPS traffic.
 The production domain is:
 
 ```text
-productioncicd.duckdns.org
+production-cicd.duckdns.org
 ```
 
 DuckDNS maps the domain to the EC2 public IPv4 address.
@@ -632,7 +632,7 @@ Retrieve Public IPv4
 DuckDNS API Update
      |
      v
-productioncicd.duckdns.org
+production-cicd.duckdns.org
 ```
 
 The HTTPS setup script waits for DNS resolution before requesting the TLS certificate.
@@ -1004,13 +1004,13 @@ The following commands can be used to verify the deployed platform.
 Verify the production application:
 
 ```bash
-curl https://productioncicd.duckdns.org
+curl https://production-cicd.duckdns.org
 ```
 
 Verify the health endpoint:
 
 ```bash
-curl https://productioncicd.duckdns.org/health
+curl https://production-cicd.duckdns.org/health
 ```
 
 ---
@@ -1116,7 +1116,7 @@ sudo certbot renew --dry-run
 Verify HTTPS:
 
 ```bash
-curl -I https://productioncicd.duckdns.org
+curl -I https://production-cicd.duckdns.org
 ```
 
 ---
@@ -1155,9 +1155,9 @@ Recommended troubleshooting sequence:
 Useful commands:
 
 ```bash
-nslookup productioncicd.duckdns.org
+nslookup production-cicd.duckdns.org
 
-curl -I https://productioncicd.duckdns.org
+curl -I https://production-cicd.duckdns.org
 
 sudo nginx -t
 

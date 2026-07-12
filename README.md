@@ -8,9 +8,9 @@ The project demonstrates an end-to-end DevOps workflow using Terraform, Docker, 
 
 ## Live Application
 
-**Production URL:** `https://productioncicd.duckdns.org`
+**Production URL:** `https://production-cicd.duckdns.org`
 
-**Health Endpoint:** `https://productioncicd.duckdns.org/health`
+**Health Endpoint:** `https://production-cicd.duckdns.org/health`
 
 ---
 
@@ -167,7 +167,7 @@ Internet
    |
    v
 DuckDNS
-productioncicd.duckdns.org
+production-cicd.duckdns.org
    |
    v
 AWS EC2
@@ -376,7 +376,7 @@ The `https-setup.sh` script automates production DNS and TLS configuration.
 Domain:
 
 ```text
-productioncicd.duckdns.org
+production-cicd.duckdns.org
 ```
 
 The script performs the following workflow:
@@ -749,13 +749,13 @@ Destroying unused cloud infrastructure helps prevent unnecessary AWS charges.
 Verify the production application:
 
 ```bash
-curl https://productioncicd.duckdns.org
+curl https://production-cicd.duckdns.org
 ```
 
 Verify the health endpoint:
 
 ```bash
-curl https://productioncicd.duckdns.org/health
+curl https://production-cicd.duckdns.org/health
 ```
 
 ---

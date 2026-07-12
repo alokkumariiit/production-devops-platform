@@ -5,7 +5,7 @@ output "ec2_public_ip" {
 
 output "application_url" {
   description = "Production HTTPS application URL"
-  value       = "https://productioncicd.duckdns.org"
+  value       = "https://production-cicd.duckdns.org"
 }
 
 output "prometheus_url" {
