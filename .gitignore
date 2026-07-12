@@ -1,70 +1,39 @@
-# =========================
 # Node.js
-# =========================
 node_modules/
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# =========================
-# Environment Variables
-# =========================
+# Environment variables
 .env
 .env.*
 !.env.example
 
-# =========================
-# Logs
-# =========================
-logs/
-*.log
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
 
-# =========================
-# Build Output
-# =========================
-dist/
-build/
-coverage/
+# Terraform crash logs
+crash.log
+crash.*.log
 
-# =========================
-# VS Code
-# =========================
-.vscode/
+# SSH keys
+*.pem
+*.key
 
-# =========================
-# OS Files
-# =========================
+# Operating system
 .DS_Store
 Thumbs.db
 
-# =========================
-# Terraform
-# =========================
-.terraform/
-*.tfstate
-*.tfstate.*
-terraform.tfvars
-terraform.tfvars.json
-crash.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# IDE
+.vscode/
+.idea/
 
-# =========================
-# Kubernetes Secrets
-# =========================
-*.secret.yaml
-secrets.yaml
+# Logs
+*.log
+logs/
 
-# =========================
-# Docker
-# =========================
-.docker/
-
-# =========================
-# Misc
-# =========================
-*.bak
+# Temporary files
 *.tmp
 *.swp
